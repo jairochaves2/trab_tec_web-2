@@ -1,3 +1,29 @@
-body{
-    background-color: #6c757d;
+
+html,body{
+       height: 100%;
+}
+
+.card-img-top{
+    width: 5em;
+    border-radius: 100%;
+    background-color: #ccc;
+}
+
+.list-group-item-primary{
+    padding-left: 40px;
+    text-decoration: none;
+    color: #020e31;
+
+}
+.list-group-item-primary a{
+    text-decoration: none;
+}
+label{
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+.bg-person{
+    background-color: #fdfce4 ;
+    
+    
 }
