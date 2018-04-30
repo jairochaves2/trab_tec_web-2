@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/personalizado.css">
+  <title>Currículo</title>
+  <link rel="icon" href="../imagens/favicon.png">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="../imagens/logo1.png" alt="Logo Jairo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="formacao.html">
+            Formação
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="exp_prof.html">
+            Experiência Profissional
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="competencia.html">
+            Competências
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="interesses.html">
+            Interesses
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="info_adicionais.html">
+            Informações adicionais
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contato.html">
+            Contato
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- fim navegação -->
+      <header>
+      </header>
+      <article class="infos">
+        <div id="col1">
+          <h3>Contato:</h3>
+          <form class=""  name="form1" action="contato_confirma.html" method="post" onSubmit="return valida();">
+            <label for="nome">
+              Nome:
+            </label>
+            <br>
+            <div id="divNome">
+              <input type="text" name="nome" value="">
+              <small id="setErroNome" class="erro"></small>
+            </div>
+            <label for="email">
+              E-mail:
+            </label>
+            <br>
+            <div id="divMail">
+              <input type="text" name="email" maxlength="60" onblur="checarEmail();" onfocus="limpaErroEmail();">
+              <small id="erroEmail" class="erro"></small>
+            </div>
+            <div class="botoes">
+              <label for="">
+                Mensagem:
+              </label>
+              <br>
+              <textarea name="mensagem" rows="8" cols="80"></textarea>
+              <small id="setErroMensagem" class="erro" style="Float:right"></small>
+              <br>
+
+              <button id="enviar" type="submit" name="button">Enviar</button>
+              <button type="reset" name="button">Limpar</button>
+            </div>
+          </form>
+
+        </div>
+
+        <div id="rodape">
+          Desnvolvido por Jairo Chaves.
+        </div>
+      </article>
+      <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+      <script src="../js/jquery-3.3.1.min.js"></script>
+      <script src="../js/popper.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
