@@ -21,9 +21,20 @@ html,body{
 label{
     font-weight: bold;
     margin-bottom: 0%;
+    
 }
 .bg-person{
-    background-color: #fdfce4 ;
+    background-color: #097c91 ;
     
     
 }
+a:link, a:visited {
+	color:  #020e31;
+	}
+a:hover {
+	color:  #020e31;
+	
+	}
+a:active {
+	color:  #020e31;
+	}

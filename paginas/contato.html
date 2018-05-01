@@ -13,9 +13,9 @@
   <link rel="icon" href="../imagens/favicon.png">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info m-0">
+    <a class="navbar-brand" href="../index.html">
       <img src="../imagens/logo1.png" alt="Logo Jairo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -64,51 +64,66 @@
     </div>
   </nav>
   <!-- fim navegação -->
-      <header>
-      </header>
-      <article class="infos">
-        <div id="col1">
-          <h3>Contato:</h3>
-          <form class=""  name="form1" action="contato_confirma.html" method="post" onSubmit="return valida();">
-            <label for="nome">
-              Nome:
+
+  <div class="container bg-white mt-3 text-info">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="text-info">
+          <strong>Contato:</strong>
+        </h3>
+        <form class="ml-3" name="form1" action="contato_confirma.html" method="post" onSubmit="return valida();">
+          <label for="nome">
+            Nome:
+          </label>
+          <br>
+          <div id="divNome">
+            <input type="text" name="nome" value="">
+            <small id="setErroNome" class="erro"></small>
+          </div>
+          <label for="email">
+            E-mail:
+          </label>
+          <br>
+          <div id="divMail">
+            <input type="text" name="email" maxlength="60" onblur="checarEmail();" onfocus="limpaErroEmail();">
+            <small id="erroEmail" class="erro"></small>
+          </div>
+          <div class="botoes">
+            <label for="">
+              Mensagem:
             </label>
             <br>
-            <div id="divNome">
-              <input type="text" name="nome" value="">
-              <small id="setErroNome" class="erro"></small>
-            </div>
-            <label for="email">
-              E-mail:
-            </label>
+            <textarea name="mensagem" rows="4" cols="80"></textarea>
+            <small id="setErroMensagem" class="erro" style="Float:right"></small>
             <br>
-            <div id="divMail">
-              <input type="text" name="email" maxlength="60" onblur="checarEmail();" onfocus="limpaErroEmail();">
-              <small id="erroEmail" class="erro"></small>
-            </div>
-            <div class="botoes">
-              <label for="">
-                Mensagem:
-              </label>
-              <br>
-              <textarea name="mensagem" rows="8" cols="80"></textarea>
-              <small id="setErroMensagem" class="erro" style="Float:right"></small>
-              <br>
 
-              <button id="enviar" type="submit" name="button">Enviar</button>
-              <button type="reset" name="button">Limpar</button>
-            </div>
-          </form>
+            <button id="enviar" type="submit" name="button">Enviar</button>
+            <button type="reset" name="button">Limpar</button>
+          </div>
+        </form>
 
+        <div class="container" style="height:29vh; width:1px">
         </div>
-
-        <div id="rodape">
+      </div>
+    </div>
+  </div>
+  <!-- Fim  div Espaçador-->
+  </div>
+  <!--Fim Div Main-->
+  <div class="container mt-3 mh-100 bg-dark border-top border-danger">
+    <div class="row">
+      <div class="col-12 ">
+        <footer class="text-center text-white  py-4 ">
           Desnvolvido por Jairo Chaves.
-        </div>
-      </article>
-      <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-      <script src="../js/jquery-3.3.1.min.js"></script>
-      <script src="../js/popper.min.js"></script>
-      <script src="../js/bootstrap.min.js"></script>
-  </body>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+
 </html>
