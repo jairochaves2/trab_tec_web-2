@@ -71,41 +71,40 @@
         <h3 class="text-info">
           <strong>Contato:</strong>
         </h3>
-        <form class="ml-3" name="form1" action="contato_confirma.html" method="post" onSubmit="return valida();">
-          <label for="nome">
-            Nome:
-          </label>
-          <br>
-          <div id="divNome">
-            <input type="text" name="nome" value="">
-            <small id="setErroNome" class="erro"></small>
-          </div>
-          <label for="email">
-            E-mail:
-          </label>
-          <br>
-          <div id="divMail">
-            <input type="text" name="email" maxlength="60" onblur="checarEmail();" onfocus="limpaErroEmail();">
-            <small id="erroEmail" class="erro"></small>
-          </div>
-          <div class="botoes">
-            <label for="">
-              Mensagem:
-            </label>
-            <br>
-            <textarea name="mensagem" rows="4" cols="80"></textarea>
-            <small id="setErroMensagem" class="erro" style="Float:right"></small>
+        <form class="" name="form1" action="contato_confirma.html" method="post" onSubmit="return valida();">
+          <div class="input-group mb-4">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Nome:</span>
+            </div>
+            <input type="text" name="nome" value="" class="form-control border border-info">
             <br>
 
-            <button id="enviar" type="submit" name="button">Enviar</button>
-            <button type="reset" name="button">Limpar</button>
           </div>
-        </form>
 
-        <div class="container" style="height:29vh; width:1px">
-        </div>
+          <div class="input-group mb-4">
+            <div class="input-group-prepend">
+              <span class="input-group-text">E-mail:</span>
+            </div>
+            <input type="text" name="email" onblur="checarEmail();" onfocus="limpaErroEmail();" class="form-control border border-info">
+          </div>
+
+          <div class="input-group mb-4 ">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Mensagem:</span>
+            </div>
+            <textarea name="mensagem" rows="2" cols="80" class="form-control border border-info"></textarea>
+          </div>
+          <div class="text-center mt-5">
+            <button id="enviar" type="submit" name="button" class="btn btn-outline-info col-3 ml-4">Enviar</button>
+            <button type="reset" name="button" class="btn btn-outline-secondary col-3 ml-4">Limpar</button>
+          </div>
+      </div>
+      </form>
+
+      <div class="container" style="height:27vh; width:1px">
       </div>
     </div>
+  </div>
   </div>
   <!-- Fim  div Espaçador-->
   </div>
